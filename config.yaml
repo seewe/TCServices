@@ -2,8 +2,9 @@ baseURL: https://examplesite.com
 title: Somrat | Hugo Portfolio Template
 theme: somrat
 paginate: '6'
-summaryLength: '10'
+summaryLength: '10' 
 disableLanguages: []
+defaultContentLanguage: fr
 googleAnalytics: ''
 disqusShortname: ''
 outputs:
@@ -13,7 +14,7 @@ markup:
     renderer:
       unsafe: yes
 params:
-  author: somrat
+  author: Seewe
   description: This is meta description
   favicon: images/favicon.png
   logo_dark: images/logo-dark.png
@@ -43,7 +44,7 @@ params:
     preloader: images/preloader.gif
   social:
     - icon: fab fa-facebook-f
-      link: https://www.facebook.com/somratpro
+      link: https://www.facebook.com/sergio.ebouele
     - icon: fab fa-twitter
       link: https://twitter.com/somratpro
     - icon: fab fa-instagram
@@ -51,32 +52,33 @@ params:
     - icon: fab fa-github
       link: https://github.com/somratpro
     - icon: fab fa-linkedin
-      link: https://www.linkedin.com/in/somratpro
+      link: https://www.linkedin.com/in/sergio-ewane-ebouele-b676b31ab/
+
 Languages:
-  en:
-    contentDir: content/english
-    copyright: Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)
-    home: Home
-    languageCode: en-us
-    languageName: En
+  fr:
+    contentDir: content/french
+    copyright: Thom & Charly Services Inc.
+    home: Accueil
+    languageCode: fr-fr
+    languageName: Fr 
     menu:
       main:
-        - name: Home
+        - name: Acceuil
           url: /
           weight: 1
-        - name: About me
+        - name: À propos de nous
           pre: '#'
           url: about
           weight: 2
-        - name: Service
+        - name: Services
           pre: '#'
           url: service
           weight: 3
-        - name: Portfolio
+        - name: Nos Dossiers
           pre: '#'
           url: portfolio
           weight: 4
-        - name: Testimonial
+        - name: Témoignages
           pre: '#'
           url: testimonial
           weight: 5
@@ -88,35 +90,38 @@ Languages:
           url: blog
           weight: 7
     weight: 1
-  fr:
-    contentDir: content/french
-    copyright: Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)
-    home: Accueil
-    languageCode: fr-fr
-    languageName: Fr
+  en:
+    contentDir: content/english
+    copyright: Thom & Charly Services Inc.
+    home: Home
+    languageCode: en-us
+    languageName: En
     menu:
       main:
         - name: Home
-          url: /
+          url: /en
           weight: 1
         - name: About me
-          pre: '#'
+          pre: 'en#'
           url: about
           weight: 2
-        - name: Service
-          pre: '#'
+        - name: Services
+          pre: 'en#'
           url: service
           weight: 3
         - name: Portfolio
-          pre: '#'
+          pre: 'en#'
           url: portfolio
           weight: 4
-        - name: Testimonial
-          pre: '#'
+        - name: Testimonials
+          pre: 'en#'
           url: testimonial
           weight: 5
         - name: Contact
-          pre: '#'
+          pre: 'en#'
           url: contact
           weight: 6
+        - name: Blog
+          url: blog
+          weight: 7
     weight: 2

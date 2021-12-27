@@ -1,5 +1,5 @@
 ---
-title : "TESTIMONIALS"
+title : "TÉMOIGNAGES"
 testimonial_slider:
 # slider item loop
 - name : "Boris, Mboke"

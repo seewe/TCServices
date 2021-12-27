@@ -1,11 +1,11 @@
 ---
-title : "WRITE TO US !"
+title : "ÉCRIVEZ NOUS !"
 bg_image: "images/backgrounds/contact-us-bg.jpg"
 form_action: "#" # works with https://formspree
-name: "Name"
+name: "Nom"
 email: "Email"
 message: "Message"
-submit: "Send"
+submit: "Envoyer"
 
 
 # custom style
