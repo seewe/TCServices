@@ -1,5 +1,5 @@
 ---
-title: "Marché de l'emploi au Québec"
+title: "Emploi au Québec"
 date: 2020-05-12T12:14:34+06:00
 image: "images/portfolio/item6.jpg"
 categories: ["Chômage"]

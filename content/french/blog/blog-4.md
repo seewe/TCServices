@@ -1,7 +1,7 @@
 ---
 title: "Parles en, des ressources existent"
 date: 2022-05-12T12:14:34+06:00
-image: "images/portfolio/item4.jpg"
+image: "images/blog/item4.jpg"
 tags: ["Aide social","Immigration"]
 description: "This is meta description."
 draft: false

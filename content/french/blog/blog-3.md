@@ -1,7 +1,7 @@
 ---
 title: "Inirmière ou Infirmier Formé(e) hors Québec ?"
 date: 2020-05-12T12:14:34+06:00
-image: "images/portfolio/item3.jpg"
+image: "images/blog/item3.jpg"
 tags: ["Formation","Profession Infirmière"]
 description: "This is meta description."
 draft: false

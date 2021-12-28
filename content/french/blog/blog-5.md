@@ -1,7 +1,7 @@
 ---
 title: "Le secteur de la santé au Québec, viens donner un coup de main !"
 date: 2022-12-12T12:14:34+06:00
-image: "images/portfolio/item5.jpg"
+image: "images/blog/item5.jpg"
 tags: ["Québec","Santé"]
 description: "This is meta description."
 draft: false

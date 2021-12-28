@@ -1,7 +1,7 @@
 ---
 title: "Infirmier ou Infirmière à Québec"
 date: 2021-12-26T12:14:34+06:00
-image: "images/portfolio/item1.jpg"
+image: "images/blog/item1.jpg"
 tags: ["Profession Infirmière", "Québec"]
 description: "This is meta description."
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Travailler au Québec"
 date: 2022-01-12T12:14:34+06:00
-image: "images/portfolio/item2.jpg"
+image: "images/blog/item2.jpg"
 tags: ["Immigration","Travailler"]
 description: "This is meta description."
 draft: false
