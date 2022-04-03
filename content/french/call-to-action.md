@@ -1,9 +1,10 @@
 ---
-title : "BESOIN DE NOS SERVICES?"
+title : "BESOIN DE NOS SERVICES ?"
 bg_image : "images/backgrounds/need-service.jpg"
+
 button:
   enable : true
-  label : "ÉCRIVEZ NOUS !"
+  label : "Contactez nous !"
   link : "#contact"
 
 

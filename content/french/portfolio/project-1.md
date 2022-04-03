@@ -1,48 +1,35 @@
 ---
-title: "Placement"
-date: 2020-05-12T12:14:34+06:00
+title: "RH"
+date: 2022-03-27T12:14:34+06:00
 image: "images/portfolio/item1.jpg"
-categories: ["Placement","Recrutement"]
+categories: ["Placement","Recrutement", "Coaching"]
 description: "This is meta description."
 draft: false
 project_info:
 - name: "Client"
   icon: "fas fa-user"
-  content: "John Doe"
-- name: "Project Link"
+  content: "No restriction"
+- name: "Lien du Projet"
   icon: "fas fa-link"
-  content: "https://examplesite.com/"
-- name: "New Item"
+  content: "https://thomcharly.ca"
+- name: "Nouveau post"
   icon: "fas fa-globe"
-  content: "Add whatever you want"
-- name: "Loop Item"
+  content: "Non"
+- name: "Dossier à suivre"
   icon: "fas fa-redo"
-  content: "This is in a loop"
+  content: "Non"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+**Thom & Charly Services Inc** accompagne le département des ressources humaines de plusieurs entreprises et établissement de santé pour combler le manque de travailleur.
 
 
-#### Project Details
+#### Détails du project
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+Au regard de la peinurie de travailleurs dans plusieurs secteurs de l'économie Québecoise, **Thom & Charly Services inc.** s'est donné pour mission de proposer une main d'oeuvre qualifiée à ses partenaires et de gérer toute la partie administrative du recrutement du personnel.
 
 
-#### Project Requirements
+#### Requis du projet
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+ - Numéro d'entreprise du Québec  
+ - Permi de la CNESST  
+ - Personnel administratif.

@@ -17,8 +17,8 @@ params:
   author: Seewe
   description: This is meta description
   favicon: images/favicon.png
-  logo_dark: images/logo-dark.png
-  logo_light: images/logo.png
+  #logo_dark: images/logo-dark.png
+  #logo_light: images/logo.png
   logo_width: 150px
   plugins:
     css:

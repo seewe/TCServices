@@ -8,9 +8,8 @@ bg_image : "images/backgrounds/full-nav-bg.jpg"
 occupations:
 - "Placement du personnel"
 - "Recrutement à l'international"
-- "Coaching des infirmières et infirmiers formés hors Québec"
-- "Tutorat dans plusieurs domaines"
-- "Service administratif"
+- "Coaching du personnel formé hors Québec"
+
 
 # slider background image loop
 slider_images:

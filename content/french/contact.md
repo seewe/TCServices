@@ -1,11 +1,15 @@
 ---
-title : "ÉCRIVEZ NOUS !"
+title : "CONTACTEZ NOUS !"
 bg_image: "images/backgrounds/contact-us-bg.jpg"
 form_action: "#" # works with https://formspree
-name: "Nom"
-email: "Email"
-message: "Message"
-submit: "Envoyer"
+#name: "Nom"
+label1: "@dresse email"
+email: "info@thomcharly.ca"
+#message: "Message"
+#submit: "Envoyer"
+label2: "Téléphone"
+number1: "438 933 4516"
+number2: "581 578 9352"
 
 
 # custom style

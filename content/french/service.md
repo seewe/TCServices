@@ -3,19 +3,15 @@ title : "SERVICES"
 service_list:
 # service item loop
 - name : "Placement du personnel"
-  image : "images/icons/web-development.png"
+  image : "images/icons/placement.jpg"
   
 # service item loop
 - name : "Recrutement à l'international"
-  image : "images/icons/graphic-design.png"
+  image : "images/icons/interHiring.jpg"
   
 # service item loop
-- name : "Coaching"
-  image : "images/icons/dbms.png"
-  
-# service item loop
-- name : "Tutorat"
-  image : "images/icons/software-development.png"
+- name : "Coaching dans plusieurs domaines"
+  image : "images/icons/coaching2.jpg"
   
 
 

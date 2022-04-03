@@ -281,7 +281,7 @@
     {{ with .Content }}<div class="text-white content">{{ . | markdownify }}</div> {{ end }}
     {{ with .Params.button }}
     {{ if .enable }}
-    <a href="{{ .link | absURL}}">{{ .label }}</a>
+    <a href="{{ .link | relURL}}">{{ .label }}</a>
     {{ end }}
     {{ end }}
   </div>
@@ -400,7 +400,10 @@
 {{ end }}
 <!-- end funfacts -->
 
+
+
 <!-- Start Contact -->
+
 {{ with .GetPage "contact"}}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="contact {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} style="background-image: url('{{.Params.bg_image | absURL}}');" id="contact">
@@ -408,6 +411,12 @@
     <div class="row">
       <div class="contact-holder col-lg-8 offset-lg-2 col-sm-8 offset-sm-2">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title | markdownify}}</h1>
+        <h3></i>{{ .Params.label1 }}</h3></br>
+        <h4>{{ .Params.email }}</h4></br>
+        <h3><i class="fa fa-phone"></i>   {{ .Params.label2 }}</h3></br>
+        <h4>{{ .Params.number1 }}</h4></br>
+        <h4>{{ .Params.number2 }}</h4>
+        <!--
         <form method="POST" action="{{ .Params.form_action }}" data-toggle="validator">
           <div class="form-container row wow fadeInUp" data-wow-duration="1.5s">
             <div class="form-group col-lg-6">
@@ -429,6 +438,7 @@
             </div>
           </div>
         </form>
+        -->
       </div>
     </div>
     <div class="row">
@@ -450,6 +460,7 @@
   </div>
 </section>
 {{ end }}
+
 <!-- End Contact -->
 
 <a href="#home" class="scroll-up hvr-icon-up"></a>
