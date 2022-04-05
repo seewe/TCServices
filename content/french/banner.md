@@ -31,7 +31,7 @@ slider_images:
 # button
 button:
   enable : true
-  label : "APPELEZ NOUS"
+  label : "CONTACTEZ NOUS"
   link : "#contact"
 
 
