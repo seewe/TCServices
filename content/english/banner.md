@@ -32,7 +32,7 @@ slider_images:
 # button
 button:
   enable : true
-  label : "HIRE US"
+  label : "CONTACT US"
   link : "#contact"
 
 

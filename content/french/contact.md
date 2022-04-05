@@ -8,8 +8,8 @@ email: "info@thomcharly.ca"
 #message: "Message"
 #submit: "Envoyer"
 label2: "Téléphone"
-number1: "438 933 4516"
-number2: "581 578 9352"
+number1: "+1 438 933 4516"
+number2: "+1 581 578 9352"
 
 
 # custom style
