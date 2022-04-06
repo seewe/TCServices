@@ -34,7 +34,7 @@
           </div>
           {{ with .Params.button }}
           {{ if .enable }}
-          <a class="hireMe" href="{{ .link | relURL}}" target="_blank">{{ .label }}</a>
+          <a class="hireMe" href="{{ .link | relURL}}">{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -93,7 +93,7 @@
       <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
         {{ range site.Menus.main }}
         <li class="menu-item hvr-underline-from-left 1"><a
-            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" target="_blank">{{ .Name }}</a>
+            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
@@ -324,7 +324,7 @@
             data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
             <div class="item-holder">
               <a class="image-pop" href="{{ .Params.image | absURL }}" title="{{ .Title | markdownify }}">
-                 <img src="{{ .Params.image | absURL }}" alt="{{ .Title | markdownify }}">
+                <img src="{{ .Params.image | absURL }}" alt="{{ .Title | markdownify }}">
               </a>
               <div class="item-caption">
                 <h2 class="mt-2"><a class="text-white" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h2>
@@ -452,7 +452,7 @@
         <hr>
         <ul class="footer-icons list-inline">
           {{ range site.Params.social }}
-          <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          <li><a href="{{ .link | safeURL }}" target="_blank" rel="noopener noreferrer"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
         <div class="to-top">
