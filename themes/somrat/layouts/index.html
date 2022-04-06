@@ -34,7 +34,7 @@
           </div>
           {{ with .Params.button }}
           {{ if .enable }}
-          <a class="hireMe" href="{{ .link | relURL}}">{{ .label }}</a>
+          <a class="hireMe" href="{{ .link | relURL}}" target="_blank">{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -93,7 +93,7 @@
       <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
         {{ range site.Menus.main }}
         <li class="menu-item hvr-underline-from-left 1"><a
-            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" target="_blank">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
@@ -162,7 +162,7 @@
             {{ end }}
             <ul class="mobile-menu-icons list-inline">
               {{ range site.Params.social }}
-              <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+              <li><a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
               {{ end }}
             </ul>
           </nav>
