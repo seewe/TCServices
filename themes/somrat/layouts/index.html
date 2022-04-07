@@ -37,9 +37,6 @@
           <a class="hireMe" href="{{ .link | relURL}}">{{ .label }}</a>
           {{ end }}
           {{ end }}
-          
-          <iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=70_DEhdlx0Sc_3g9dELrwdpsvZPt-sZPvlCgGTKfAERUMDdGMDhVT0M3NThKWlJWR0laVEw3U1lOSS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-          
         </div>
       </div>
     </div>
@@ -280,16 +277,37 @@
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section id="cta" class="need-service overlay section-sm wow fadeInUp {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} data-wow-duration="1.5s" style="background-image: url('{{ .Params.bg_image | absURL }}');">
   <div class="container position-relative z-index-9">
+    
+    {{ if .Params.button.enable }}
     <h1>{{ .Title | markdownify }}</h1>
+    {{ end }}
+    {{ if .Params.form.enable }}
+    <h1>{{ .Params.form.title | markdownify }}</h1>
+    {{ end }}
+    
     {{ with .Content }}<div class="text-white content">{{ . | markdownify }}</div> {{ end }}
     {{ with .Params.button }}
     {{ if .enable }}
-    <a href="{{ .link | relURL}}">{{ .label }}</a>
+    <a href="{{ .link | relURL}}">{{ .label }}</a></br></br>
+    {{ end }}
+    {{ end }}
+    {{ with .Params.form }}
+    {{ if .enable }}
+    <iframe width={{.width}} height= {{.height}} 
+        src= {{.link}} frameborder= "0"
+        marginwidth= "0" marginheight= "0"
+        style= {{.style}} 
+        allowfullscreen 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        msallowfullscreen>
+    </iframe>
     {{ end }}
     {{ end }}
   </div>
 </section>
 {{ end }}
+
 <!-- end call to action -->
 
 <!-- Start Portfolio -->
