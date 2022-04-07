@@ -15,7 +15,7 @@ markup:
       unsafe: yes
 params:
   author: Seewe
-  description: This is meta description
+  description: Page web de l'entreprise Thom & Charly Services Inc.
   favicon: images/favicon.png
   #logo_dark: images/logo-dark.png
   #logo_light: images/logo.png
