@@ -44,9 +44,9 @@ params:
     preloader: images/preloader.gif
   social:
     - icon: fab fa-facebook-f
-      link: https://www.facebook.com/sergio.ebouele
-    - icon: fab fa-linkedin
-      link: https://www.linkedin.com/in/sergio-ewane-ebouele-b676b31ab/
+      link: https://www.facebook.com/Thom-Charly-services-Inc-105407012142727
+    # - icon: fab fa-linkedin
+    #   link: https://www.linkedin.com/in/sergio-ewane-ebouele-b676b31ab/
     #- icon: fab fa-twitter
     #   link: https://twitter.com/somratpro
     #- icon: fab fa-instagram
