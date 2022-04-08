@@ -20,7 +20,7 @@ slider_images:
 - "images/slider/slider-4.jpg"
 - "images/slider/slider-5.jpg"
 - "images/slider/slider-6.jpg"
-- "images/slider/slider-7.jpg"
+#- "images/slider/slider-7.jpg"
 - "images/slider/slider-8.jpg"
 - "images/slider/slider-9.jpg"
 - "images/slider/slider-10.jpg"
