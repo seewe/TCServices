@@ -99,7 +99,7 @@ Languages:
     menu:
       main:
         - name: Home
-          url: /en
+          url: /
           weight: 1
         - name: About us
           pre: '#'
