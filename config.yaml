@@ -99,14 +99,14 @@ Languages:
     menu:
       main:
         - name: Home
-          url: /
+          url: /en
           weight: 1
         - name: About us
-          pre: '#'
+          pre: 'en#'
           url: about
           weight: 2
         - name: Services
-          pre: '#'
+          pre: 'en#'
           url: service
           weight: 3
         # - name: Portfolio
@@ -118,7 +118,7 @@ Languages:
         #   url: testimonial
         #   weight: 5
         - name: Contact
-          pre: '#'
+          pre: 'en#'
           url: contact
           weight: 4
         # - name: Blog
