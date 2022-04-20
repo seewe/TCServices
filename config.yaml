@@ -102,12 +102,12 @@ Languages:
           url: /en
           weight: 1
         - name: About us
-          #pre: 'en#'
-          url: /en#about
+          pre: '#'
+          url: about
           weight: 2
-        - name: /en#Services
-          #pre: 'en#'
-          url: /en#service
+        - name: Services
+          pre: '#'
+          url: service
           weight: 3
         # - name: Portfolio
         #   pre: 'en#'
@@ -118,8 +118,8 @@ Languages:
         #   url: testimonial
         #   weight: 5
         - name: Contact
-          #pre: 'en#'
-          url: /en#contact
+          pre: '#'
+          url: contact
           weight: 4
         # - name: Blog
         #   url: blog
