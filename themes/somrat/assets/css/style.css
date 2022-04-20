@@ -45,7 +45,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #2b2c2f;
+	background-color: #ffffff;/*#2b2c2f;*/
 	z-index: 99999;
 	display: -webkit-box;
 	display: -ms-flexbox;
