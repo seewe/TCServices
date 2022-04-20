@@ -41,7 +41,7 @@ params:
       - link: plugins/owl-carousel/owl.carousel.min.js
   preloader:
     enable: yes
-    preloader: images/preloader.gif
+    preloader: images/preloader.jpg
   social:
     - icon: fab fa-facebook-f
       link: https://www.facebook.com/Thom-Charly-services-Inc-105407012142727
