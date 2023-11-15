@@ -9,7 +9,7 @@ button:
   
 form:
   title : "INSCRIPTION À UNE SÉANCE D'INFORMATION"
-  enable : true
+  enable : false
   link : "https://forms.office.com/Pages/ResponsePage.aspx?id=70_DEhdlx0Sc_3g9dELrwdpsvZPt-sZPvlCgGTKfAERURDQ5TzdINjRLVlNQNUVROFJPUVhNUU9JRS4u"
   style : "border: none; max-width:100%; max-height:100vh"
   width : "700px"
