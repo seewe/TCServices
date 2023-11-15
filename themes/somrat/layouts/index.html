@@ -1,11 +1,13 @@
 {{ define "main" }}
 
-<!-- Start Header --> 
+<!-- Start Header -->
+
 {{ with .GetPage "banner" }}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="header {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="home">
   <div class="logo">
-    <img class="img-fluid" src="{{ site.Params.logo_light | relURL }}" alt="TC"> <!--"{{ site.Title }}"-->
+    <p>TC</p>
+    <!--<img class="img-fluid" src="{{ site.Params.logo_light | relURL }}" alt="TC"> "{{ site.Title }}"-->
   </div>
   <div class="slider-prev-button slider-button">
     <i class="fa fa-angle-left"></i>
@@ -22,19 +24,23 @@
     <div class="row content">
       <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
         <div class="head-holder">
-          <h1 class="introduction">{{ .Title | markdownify | emojify }}</h1>
+          <h1 class="introduction">
+            {{ .Title | markdownify | emojify }}
+          </h1>
           <div class="animated-text">
             <strong class="cd-headline clip">
               <span class="cd-words-wrapper">
                 {{ range $index, $elements:= .Params.occupations }}
-                <b {{ if eq $index 0 }} class="is-visible" {{ end }}>{{ . }}</b>
+                <b {{ if eq $index 0 }} class="is-visible" {{ end }}>
+                  {{ . }}</b>
                 {{ end }}
               </span>
             </strong>
           </div>
           {{ with .Params.button }}
           {{ if .enable }}
-          <a class="hireMe" href="{{ .link | relURL}}">{{ .label }}</a>
+          <a class="hireMe" href="{{ .link | relURL}}">
+            {{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -57,14 +63,22 @@
         <div class="full-nav-holder">
           <div class="full-nav-content">
             <div class="name">
-              {{ with .Params.first_name }}<div class="first-name">{{ . }}</div>{{ end }}
-              {{ with .Params.last_name }}<div class="last-name">{{ . }}</div>{{ end }}
+              {{ with .Params.first_name }}
+              <div class="first-name">
+                {{ . }}
+              </div>
+              {{ end }}
+              {{ with .Params.last_name }}
+              <div class="last-name">
+                {{ . }}
+              </div>
+              {{ end }}
             </div>
             <div class="fulscreen-nav">
               <ul class="list-inline fullscreen-nav-holder">
                 {{ range site.Menus.main }}
-                <li><a class="text-uppercase"
-                    href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+                <li><a class="text-uppercase" href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">
+                    {{ .Name }}</a>
                 </li>
                 {{ end }}
               </ul>
@@ -82,6 +96,7 @@
     </div>
   </div>
 </section>
+
 {{ end }}
 <!-- End Header -->
 
@@ -92,8 +107,8 @@
     <div class="menu-container">
       <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
         {{ range site.Menus.main }}
-        <li class="menu-item hvr-underline-from-left 1"><a
-            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+        <li class="menu-item hvr-underline-from-left 1"><a href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">
+            {{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
@@ -108,9 +123,13 @@
         {{ if eq $translation.Lang .Lang }}
         {{ $selected := false }}
         {{ if eq $pageLang .Lang}}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>
+          {{ .LanguageName }}
+        </option>
         {{ else }}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" >{{ .LanguageName }}</option>
+        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">
+          {{ .LanguageName }}
+        </option>
         {{ end }}
         {{ end }}
         {{ end }}
@@ -128,15 +147,14 @@
             <span></span>
           </div>
         </a>
-        <div class="mobile-menu-logo"><a href="{{site.BaseURL | relLangURL }}"><img class="img-fluid"
-              src="{{ site.Params.logo_dark | absURL }}" alt="{{ site.Title }}"></a>
+        <div class="mobile-menu-logo"><a href="{{site.BaseURL | relLangURL }}"><img class="img-fluid" src="{{ site.Params.logo_dark | absURL }}" alt="{{ site.Title }}"></a>
         </div>
         <div class="menu-slider">
           <nav>
             <ul class="mobile-menu-list">
               {{ range site.Menus.main }}
-              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a
-                  href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" target="_blank" rel="noopener noreferrer">{{ .Name }}</a>
+              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" target="_blank" rel="noopener noreferrer">
+                  {{ .Name }}</a>
               </li>
               {{ end }}
             </ul>
@@ -151,9 +169,13 @@
               {{ if eq $translation.Lang .Lang }}
               {{ $selected := false }}
               {{ if eq $pageLang .Lang}}
-              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>
+                {{ .LanguageName }}
+              </option>
               {{ else }}
-              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" >{{ .LanguageName }}</option>
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">
+                {{ .LanguageName }}
+              </option>
               {{ end }}
               {{ end }}
               {{ end }}
@@ -174,6 +196,7 @@
 <!-- End Menu -->
 
 <!-- Start About Me -->
+
 {{ with .GetPage "about" }}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="about-me {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="about">
@@ -181,11 +204,16 @@
     <div class="row about-me-holder">
       <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
         <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
-          <h1>{{ .Title | markdownify }}</h1>
-          <div class="content">{{ .Content | markdownify | emojify }}</div>
+          <h1>
+            {{ .Title | markdownify }}
+          </h1>
+          <div class="content">
+            {{ .Content | markdownify | emojify }}
+          </div>
           {{ with .Params.button }}
           {{ if .enable }}
-          <a href="{{ .link | absURL }}" class="download-cv hvr-icon-hang"> {{ .label }} &nbsp; &nbsp; &nbsp;</a>
+          <a href="{{ .link | absURL }}" class="download-cv hvr-icon-hang">
+            {{ .label }} &nbsp; &nbsp; &nbsp;</a>
           {{ end }}
           {{ end }}
         </div>
@@ -201,15 +229,27 @@
       {{ with .Params.experience }}
       {{ if .enable }}
       <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
-        <h3>{{ .title }}</h3>
+        <h3>
+          {{ .title }}
+        </h3>
         <ul class="experience-chart">
           {{ range .experience_list }}
           <li>
             <div class="single-experience">
-              <h4>{{ .name | markdownify }}</h4>
-              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
-              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              <h4>
+                {{ .name | markdownify }}
+              </h4>
+              {{ with .company }} <span>
+                {{ . | markdownify }}</span>
+              {{ end }}
+              {{ with .duration }} <span>
+                {{ . | markdownify }}</span>
+              {{ end }}
+              {{ with .content }}
+              <p>
+                {{ . | markdownify}}
+              </p>
+              {{ end }}
             </div>
           </li>
           {{ end }}
@@ -217,13 +257,16 @@
       </div>
       {{ end }}
       {{ end }}
-
       {{ with .Params.skill }}
       {{ if .enable }}
       <div class="col-lg-6 col-sm-6 col-11 skill wow fadeInUp" data-wow-duration="1.5s">
-        <h3>{{ .title }}</h3>
+        <h3>
+          {{ .title }}
+        </h3>
         <div class="skill-progress-bar">
+          <!--
           {{ range .skill_list }}
+          
           <div class="clearfix">
             <span class="skillbar-title">{{ .name }}</span>
             <span class="skill-bar-percent">{{ .percentage }}</span>
@@ -231,7 +274,9 @@
               <div class="skillbar-bar"></div>
             </div>
           </div>
+          
           {{ end }}
+          -->
         </div>
       </div>
       {{ end }}
@@ -239,10 +284,12 @@
     </div>
   </div>
 </section>
+
 {{ end }}
 <!-- End About Me -->
 
 <!-- Start Services -->
+
 {{ with .GetPage "service" }}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="services {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="service">
@@ -252,7 +299,9 @@
         <div class="wow fadeInUp" data-wow-duration="1.5s">
           <div class="services-heading">
             <div class="bar"></div>
-            <h1>{{ .Title | markdownify }}</h1>
+            <h1>
+              {{ .Title | markdownify }}
+            </h1>
           </div>
           <div class="row">
             {{ range .Params.service_list }}
@@ -260,7 +309,9 @@
               <div class="service-img">
                 <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name | markdownify }}">
               </div>
-              <div class="service-label">{{ .name | markdownify }}</div>
+              <div class="service-label">
+                {{ .name | markdownify }}
+              </div>
             </div>
             {{ end }}
           </div>
@@ -269,43 +320,46 @@
     </div>
   </div>
 </section>
+
 {{ end }}
 <!-- End Services -->
 
 <!-- call to action -->
+
 {{ with .GetPage "call-to-action" }}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section id="cta" class="need-service overlay section-sm wow fadeInUp {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} data-wow-duration="1.5s" style="background-image: url('{{ .Params.bg_image | absURL }}');">
   <div class="container position-relative z-index-9">
-    
     {{ if .Params.button.enable }}
-    <h1>{{ .Title | markdownify }}</h1>
+    <h1>
+      {{ .Title | markdownify }}
+    </h1>
     {{ end }}
     {{ if .Params.form.enable }}
-    <h1>{{ .Params.form.title | markdownify }}</h1>
+    <h1>
+      {{ .Params.form.title | markdownify }}
+    </h1>
     {{ end }}
-    
-    {{ with .Content }}<div class="text-white content">{{ . | markdownify }}</div> {{ end }}
+    {{ with .Content }}
+    <div class="text-white content">
+      {{ . | markdownify }}
+    </div>
+    {{ end }}
     {{ with .Params.button }}
     {{ if .enable }}
-    <a href="{{ .link | relURL}}">{{ .label }}</a></br></br>
+    <a href="{{ .link | relURL}}">
+      {{ .label }}</a></br></br>
     {{ end }}
     {{ end }}
     {{ with .Params.form }}
     {{ if .enable }}
-    <iframe width={{.width}} height= {{.height}} 
-        src= {{.link}} frameborder= "0"
-        marginwidth= "0" marginheight= "0"
-        style= {{.style}} 
-        allowfullscreen 
-        webkitallowfullscreen 
-        mozallowfullscreen 
-        msallowfullscreen>
+    <iframe width={{.width}} height={{.height}} src={{.link}} frameborder="0" marginwidth="0" marginheight="0" style={{.style}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen>
     </iframe>
     {{ end }}
     {{ end }}
   </div>
 </section>
+
 {{ end }}
 
 <!-- end call to action -->
@@ -437,12 +491,21 @@
   <div class="container">
     <div class="row">
       <div class="contact-holder col-lg-8 offset-lg-2 col-sm-8 offset-sm-2">
-        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title | markdownify}}</h1></br></br>
-        <h3></i>{{ .Params.label1 }}</h3></br>
-        <h4>{{ .Params.email }}</h4></br></br>
-        <h3><i class="fa fa-phone"></i>   {{ .Params.label2 }}</h3></br>
-        <h4>{{ .Params.number1 }}</h4></br>
-        <h4>{{ .Params.number2 }}</h4>
+        <h1 class="wow fadeInUp" data-wow-duration="1.5s">
+          {{ .Title | markdownify}}
+        </h1>
+        <h4>
+          {{ .Params.email }}
+        </h4>
+        <h4>
+          <i class="fa fa-phone"> :
+            {{ .Params.number1 }}
+            /
+            {{ .Params.number2 }}
+        </h4>
+        <h4>
+          <a href="{{ .Params.social.link | safeURL }}" target="_blank" rel="noopener noreferrer"><i class="{{ .Params.social.icon }}"><i class="fa fa-phone"></a>
+        </h4>
         <!--
         <form method="POST" action="{{ .Params.form_action }}" data-toggle="validator">
           <div class="form-container row wow fadeInUp" data-wow-duration="1.5s">
@@ -486,6 +549,7 @@
     </div>
   </div>
 </section>
+
 {{ end }}
 
 <!-- End Contact -->

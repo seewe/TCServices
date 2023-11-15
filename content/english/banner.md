@@ -31,7 +31,7 @@ slider_images:
 
 # button
 button:
-  enable : true
+  enable : false
   label : "CONTACT US"
   link : "#contact"
 
