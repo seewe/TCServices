@@ -9,7 +9,7 @@ email: "info@thomcharly.ca"
 #submit: "Envoyer"
 label2: "Téléphone"
 number1: "+1 438 933 4516"
-number2: "+1 581 578 9352"
+number2: ""
 
 
 # custom style
